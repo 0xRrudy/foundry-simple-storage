@@ -1,0 +1,25 @@
+# Compiler files & Build artifacts
+cache/
+out/
+zkout/
+
+# Dependencies
+node_modules/
+
+# Environment & Sensitive files
+.env
+.env.*
+
+# Broadcast logs (배포 로그 보안 처리 - 전체 무시)
+broadcast/
+
+# Logs & Temporary files
+.logs/
+.ignore/
+*.log
+.TODO.md
+
+# Editor & OS files
+.DS_Store
+.vscode/
+.idea/
