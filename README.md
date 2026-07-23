@@ -28,16 +28,16 @@ forge build
 ## Local Deployment
 
 First, spin up a local Anvil node in a separate terminal:
-
+```
 anvil
-
+```
 In a new terminal window, execute the deployment script:
-
+```
 forge script script/DeploySimpleStorage.s.sol:DeploySimpleStorage \
   --rpc-url [http://127.0.0.1:8545](http://127.0.0.1:8545) \
   --private-key <PRIVATE_KEY> \
   --broadcast
-
+```
 ## Core Functions
 
 store(uint256)                   // Stores a new favorite number
