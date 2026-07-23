@@ -5,21 +5,22 @@ pragma solidity 0.8.19;
  * @author 0xRrudy
  * @title SimpleStorage
  * @notice A simple Solidity smart contract to store and manage a uint256 value and user preferences.
+ * @dev Demonstrates state variables, structs, arrays, mappings, and basic read/write functions.
  */
 contract SimpleStorage {
-    // Current favorite number stored in the contract
+    /// @notice The current favorite number stored in the contract.
     uint256 myFavoriteNumber;
 
-    // Struct holding a user's name and their favorite number
+    /// @notice Stores a person's name and favorite number.
     struct Person {
         uint256 favoriteNumber;
         string name;
     }
 
-    // Dynamic array of registered people (public getter enables index-based lookup)
+    /// @notice A dynamic array of registered people with an index-based public getter.
     Person[] public listOfPeople;
 
-    // Mapping to look up a favorite number by a person's name
+    /// @notice Maps a person's name to their favorite number.
     mapping(string => uint256) public nameToFavoriteNumber;
 
     /**

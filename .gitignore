@@ -10,7 +10,7 @@ node_modules/
 .env
 .env.*
 
-# Broadcast logs (배포 로그 보안 처리 - 전체 무시)
+# Broadcast logs (ignored because they may contain deployment details)
 broadcast/
 
 # Logs & Temporary files
